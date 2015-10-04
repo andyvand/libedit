@@ -605,7 +605,7 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "Developer ID Application: Samantha Marshall (329DAD2G44)";
 				LD_DYLIB_INSTALL_NAME = "@rpath/$(EXECUTABLE_PATH)";
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
 				PRODUCT_NAME = "edit-unsorted.3";
 			};
 			name = Release;
