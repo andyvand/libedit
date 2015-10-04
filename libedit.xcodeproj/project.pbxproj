@@ -218,7 +218,7 @@
 		B18111971188D65A00EC8250 /* wcsdup.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = wcsdup.c; path = src/wcsdup.c; sourceTree = "<group>"; };
 		C903168F128A23B400BD42C3 /* install_misc.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = install_misc.sh; sourceTree = "<group>"; };
 		C9031690128A23B400BD42C3 /* make_lists.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = make_lists.sh; sourceTree = "<group>"; };
-		D2AAC0630554660B00DB518D /* libedit.3.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libedit.3.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2AAC0630554660B00DB518D /* libedit-unsorted.3.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = "libedit-unsorted.3.dylib"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -311,7 +311,7 @@
 		1AB674ADFE9D54B511CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D2AAC0630554660B00DB518D /* libedit.3.dylib */,
+				D2AAC0630554660B00DB518D /* libedit-unsorted.3.dylib */,
 				4C6159CF1050614000BF0A10 /* libedit.a */,
 			);
 			name = Products;
@@ -453,7 +453,7 @@
 			);
 			name = libedit;
 			productName = libedit;
-			productReference = D2AAC0630554660B00DB518D /* libedit.3.dylib */;
+			productReference = D2AAC0630554660B00DB518D /* libedit-unsorted.3.dylib */;
 			productType = "com.apple.product-type.library.dynamic";
 		};
 /* End PBXNativeTarget section */
@@ -604,7 +604,9 @@
 			baseConfigurationReference = 8128AE7C185DABB600F61B90 /* libedit.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "Developer ID Application: Samantha Marshall (329DAD2G44)";
+				LD_DYLIB_INSTALL_NAME = "@rpath/$(EXECUTABLE_PATH)";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "edit-unsorted.3";
 			};
 			name = Release;
 		};
